@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Keren Apps</string>
+    <string name="judul">Halaman Kirim</string>
+    <string name="judulbesar">Kode berhasil dikirim!</string>
+    <string name="judulkecil">Silakan periksa nomor Anda</string>
+
 </resources>

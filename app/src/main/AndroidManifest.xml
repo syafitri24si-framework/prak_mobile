@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KerenApps">
         <activity
+            android:name=".pertemuan_3.ThirdResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".pertemuan_3.ThirdActivity"
             android:exported="true">
             <intent-filter>
@@ -22,12 +25,10 @@
         </activity>
         <activity
             android:name=".pertemuan_2.SecondActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

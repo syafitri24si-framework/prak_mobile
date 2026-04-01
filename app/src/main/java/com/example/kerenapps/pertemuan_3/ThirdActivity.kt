@@ -1,5 +1,6 @@
 package com.example.kerenapps.pertemuan_3
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -20,7 +21,7 @@ class ThirdActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setContentView(R.layout.activity_third)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -36,6 +37,9 @@ class ThirdActivity : AppCompatActivity() {
             val noTujuan = binding.inputNoTujuan.text.toString()
 
             Toast.makeText(this, "Pesan berhasil dikirim $noTujuan", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, ThirdResultActivity::class.java)
+            startActivity(intent)
 
         }
     }
