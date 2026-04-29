@@ -1,4 +1,4 @@
-package com.example.kerenapps.pertemuan_4
+package com.example.kerenapps.Home.pertemuan_4
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,10 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.kerenapps.R
 import com.example.kerenapps.databinding.ActivityFourthBinding
-import com.example.kerenapps.databinding.ActivityMainBinding
-import com.example.kerenapps.databinding.ActivityThirdBinding
-import com.example.kerenapps.pertemuan_2.SecondActivity
-import com.example.kerenapps.pertemuan_4.FourthActivity
+import com.example.kerenapps.Home.pertemuan_2.SecondActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 

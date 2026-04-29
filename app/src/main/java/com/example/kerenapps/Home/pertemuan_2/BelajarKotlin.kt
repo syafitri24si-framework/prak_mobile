@@ -1,4 +1,4 @@
-package com.example.kerenapps.pertemuan_2
+package com.example.kerenapps.Home.pertemuan_2
 
 fun main() {
     println("Hai rekan-rkan...")
