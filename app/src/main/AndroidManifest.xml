@@ -15,6 +15,9 @@
         android:theme="@style/Theme.KerenApps"
         tools:targetApi="31">
         <activity
+            android:name=".pertemuan_7.SeventhActivity"
+            android:exported="false" />
+        <activity
             android:name=".AuthActivity"
             android:exported="false" />
         <activity

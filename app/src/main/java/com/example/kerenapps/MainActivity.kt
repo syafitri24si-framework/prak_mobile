@@ -14,6 +14,8 @@ import com.example.kerenapps.databinding.ActivityThirdBinding
 import com.example.kerenapps.pertemuan_2.SecondActivity
 import com.example.kerenapps.pertemuan_3.ThirdResultActivity
 import com.example.kerenapps.pertemuan_4.FourthActivity
+import com.example.kerenapps.pertemuan_5.FifthActivity
+import com.example.kerenapps.pertemuan_7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
@@ -58,14 +60,39 @@ class MainActivity : AppCompatActivity() {
                     dialog.dismiss()
                 }
                 .show()
-            binding.btnToFourth.setOnClickListener {
-                val intent = Intent(this, FourthActivity::class.java)
-                intent.putExtra("name", "Politeknik Caltex Riau")
-                intent.putExtra("asal", "Rumbai")
-                intent.putExtra("usia", 25)
-                startActivity(intent)
-                finish()
-            }
+        }
+
+        binding.btnToFourth.setOnClickListener {
+            val intent = Intent(this, FourthActivity::class.java)
+            intent.putExtra("name", "Politeknik Caltex Riau")
+            intent.putExtra("asal", "Rumbai")
+            intent.putExtra("usia", 25)
+            startActivity(intent)
+            finish()
+
+
+        }
+
+        binding.btnToSecond.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.btnToThird.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.btnToFifth.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        binding.btnToSeventh.setOnClickListener {
+            val intent = Intent(this, SeventhActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
