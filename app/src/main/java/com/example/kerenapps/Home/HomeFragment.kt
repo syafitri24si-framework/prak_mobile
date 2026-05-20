@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kerenapps.AuthActivity
+import com.example.kerenapps.Home.pertemuan_10.TenthActivity
 import com.example.kerenapps.Home.pertemuan_4.FourthActivity
 import com.example.kerenapps.Home.pertemuan_5.FifthActivity
 import com.example.kerenapps.Home.pertemuan_7.SeventhActivity
@@ -101,5 +102,11 @@ class HomeFragment : Fragment() {
 
         }
 
+        binding.btnToTenth.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+            requireActivity()
+
+        }
     }
 }
