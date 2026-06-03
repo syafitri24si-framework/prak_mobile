@@ -15,6 +15,9 @@
         android:theme="@style/Theme.KerenApps"
         tools:targetApi="31">
         <activity
+            android:name=".Message.tutorial.TutorialMessageActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home.pertemuan_10.TenthActivity"
             android:exported="false" />
         <activity
