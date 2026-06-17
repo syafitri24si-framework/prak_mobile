@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kerenapps.AuthActivity
 import com.example.kerenapps.Data.Api.PhotoApiClient
 import com.example.kerenapps.Home.pertemuan_10.TenthActivity
+import com.example.kerenapps.Home.pertemuan_13.ThirteenthActivity
 import com.example.kerenapps.Home.pertemuan_4.FourthActivity
 import com.example.kerenapps.Home.pertemuan_5.FifthActivity
 import com.example.kerenapps.Home.pertemuan_7.SeventhActivity
@@ -114,6 +115,10 @@ class HomeFragment : Fragment() {
             startActivity(intent)
             requireActivity()
 
+        }
+        binding.btnToThirteenth.setOnClickListener {
+            val intent = Intent(requireContext(), ThirteenthActivity::class.java)
+            startActivity(intent)
         }
 
         loadPhoto()

@@ -138,17 +138,34 @@
                 app:cornerRadius="12dp" />
 
             <Button
-                android:id="@+id/btnLogout"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnToThirteenth"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginVertical="24dp"
-                android:text="Logout" />
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginVertical="8dp"
+                android:backgroundTint="#00B894"
+                android:text="Pertemuan 13"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginVertical="8dp"
+                android:backgroundTint="#FF6B6B"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvGallery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:nestedScrollingEnabled="false"
                 android:padding="8dp" />
 
