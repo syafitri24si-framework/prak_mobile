@@ -1,5 +1,6 @@
 package com.example.kerenapps.Home
 
+import android.app.Activity
 import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.os.Bundle
@@ -17,6 +18,7 @@ import com.example.kerenapps.AuthActivity
 import com.example.kerenapps.Data.Api.PhotoApiClient
 import com.example.kerenapps.Home.pertemuan_10.TenthActivity
 import com.example.kerenapps.Home.pertemuan_13.ThirteenthActivity
+import com.example.kerenapps.Home.pertemuan_3.ThirdActivity
 import com.example.kerenapps.Home.pertemuan_4.FourthActivity
 import com.example.kerenapps.Home.pertemuan_5.FifthActivity
 import com.example.kerenapps.Home.pertemuan_7.SeventhActivity
@@ -26,6 +28,7 @@ import com.example.kerenapps.R
 import com.example.kerenapps.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
+import kotlin.jvm.java
 
 
 class HomeFragment : Fragment() {
@@ -88,7 +91,7 @@ class HomeFragment : Fragment() {
             requireActivity()
         }
         binding.btnToThird.setOnClickListener {
-            val intent = Intent(requireContext(), FifthActivity::class.java)
+            val intent = Intent(requireContext(), ThirdActivity::class.java)
             startActivity(intent)
             requireActivity()
         }
